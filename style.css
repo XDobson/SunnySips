@@ -264,8 +264,12 @@ form textarea {
     margin-top: 20px;
     font-family: 'Pacifico', cursive;
     text-align: center;
+    font-family: 'Architects Daughter', cursive;
 }
 
+#cashicons {
+    font-size: 60px;
+}
 
 /* Screens Wider than 2000px (4k usually) */
 @media (min-width:2000px) {
