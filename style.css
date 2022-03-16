@@ -82,7 +82,7 @@ a {
     font-size: 60px;
     z-index: 500;
 }
-#links:focus + #linkpage {
+#links:focus + #linkpage, #links:active + #linkpage, #links + #linkpage:hover {
     visibility: visible;
 }
 #linkpage:hover {
@@ -327,7 +327,7 @@ form textarea {
 }
 
 /* Landscape on smaller phones, width < 796 */
-@media (max-width:796px) {
+@media (max-width:820px) {
     #coverText {
         top: 20vh;
     }
@@ -349,7 +349,7 @@ form textarea {
 }
 
 /* Portrait fixes */
-@media (max-width:700px) {
+@media (max-width:741px) {
     #break {
         flex-basis: 100%;
         visibility: visible;
@@ -383,3 +383,15 @@ form textarea {
         font-size: 16px;
     }
 }
+/* 
+Only Safari Browsers 
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) {
+    #links {
+        visibility: hidden;
+    }
+    #linkpage {
+        visibility: visible;
+        top: 10vh;
+    }
+}} */
