@@ -78,16 +78,17 @@ a {
     
     visibility: hidden;
 }
-#linkpage i {
+/* #linkpage i {
     font-size: 60px;
     z-index: 500;
-}
-#links:focus + #linkpage, #links:active + #linkpage, #links + #linkpage:hover {
+} */
+/* #links:focus + #linkpage, #links:active + #linkpage, #links + #linkpage:hover {
     visibility: visible;
 }
 #linkpage:hover {
     visibility: visible;
-}
+} */
+
 #break{
     /* a surprise tool that will help us later (smaller screens) */
     visibility: hidden;
@@ -205,7 +206,7 @@ a {
     
 }
 
-/* Green Button */
+/* A Button */
 #cbtn {
     border-bottom: 3px gray solid;
     border-left: 3px gray solid;
@@ -270,6 +271,75 @@ form textarea {
 #cashicons {
     font-size: 60px;
 }
+
+
+/* ================= */
+/* ALL CUPS PAGE CSS */
+/* ================= */
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10vh;
+}
+
+#cupRow { 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #e9cff6;
+    margin: 10vh 3vw;
+    padding: 1vw;
+    border-radius: 20px;
+}
+
+#cupRow img {
+    width: 50%;
+}
+
+#cupRow p {
+    font-family: 'Architects Daughter', cursive;
+    text-align: center;
+    font-size: 6vh;
+    width: 40%;
+    padding-bottom: 10px;
+}
+
+
+/* All Cups Media Queries */
+@media (max-width:1200px) and (orientation:portrait) {
+    #cupRow p {
+        font-size: 4vh;
+    }
+}
+
+@media (max-width:900px) and (orientation:portrait) {
+    #cupRow {
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 7vh 0;
+        height: 90vh;
+    }
+    #cupRow img {
+        width: 70%;
+    }
+    #cupRow p {
+        font-size: 5vh;
+        width: 70vw;
+    }
+}
+
+@media (max-width:600px) and (orientation:portrait) {
+    #cupRow p {
+        font-size: 4vh;
+    }
+}
+
+
+
+
+
+/* MEDIA QUERIES */
 
 /* Screens Wider than 2000px (4k usually) */
 @media (min-width:2000px) {
