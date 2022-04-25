@@ -229,7 +229,7 @@ a {
 
 #spacer {
     width: 100%;
-    height: 10vh;
+    height: 12vh;
 }
 form {
     display: flex;
@@ -336,10 +336,24 @@ main {
 }
 
 
+/* ======================== */
+    /* SHOPS PAGE CSS */
+/* ======================== */
+.ecsp {
+
+    padding-top: 20px;
+}
 
 
 
-/* MEDIA QUERIES */
+
+
+
+
+
+/* ======================== */
+    /* MEDIA QUERIES */
+/* ======================== */
 
 /* Screens Wider than 2000px (4k usually) */
 @media (min-width:2000px) {
