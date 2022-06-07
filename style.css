@@ -13,9 +13,11 @@ font-family: 'Pacifico', cursive;
     border: 0;
     margin: 0;
 }
-
+html{
+    scroll-behavior: smooth
+}
 body {
-    background-color: #ffffe8;
+    background-color: #fdfdde;
     position: relative;
 }
 
@@ -78,16 +80,19 @@ a {
     
     visibility: hidden;
 }
-/* #linkpage i {
+
+/* ***Depreciated***
+ #linkpage i {
     font-size: 60px;
     z-index: 500;
-} */
-/* #links:focus + #linkpage, #links:active + #linkpage, #links + #linkpage:hover {
+} 
+ #links:focus + #linkpage, #links:active + #linkpage, #links + #linkpage:hover {
     visibility: visible;
 }
 #linkpage:hover {
     visibility: visible;
-} */
+} 
+*/
 
 #break{
     /* a surprise tool that will help us later (smaller screens) */
@@ -156,6 +161,7 @@ a {
 .showcase {
     width: 30vw;
     margin: 30px;
+    border-radius: 50px;
 }
 #textbox {
     display: flex;
@@ -183,8 +189,8 @@ a {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #E8E8FF;
-    border: #E8E8FF solid 2px;
+    background-color: #c2c2ff;
+    border: #d7d7ff solid 5px;
     border-radius: 20px;
     padding: 20px 0;
     margin: 40px 0;
@@ -229,7 +235,7 @@ a {
 
 #spacer {
     width: 100%;
-    height: 10vh;
+    height: 12vh;
 }
 form {
     display: flex;
@@ -294,13 +300,13 @@ main {
 }
 
 #cupRow img {
-    width: 50%;
+    width: 30%;
 }
 
 #cupRow p {
     font-family: 'Architects Daughter', cursive;
     text-align: center;
-    font-size: 6vh;
+    font-size: 5vh;
     width: 40%;
     padding-bottom: 10px;
 }
@@ -318,7 +324,6 @@ main {
         flex-direction: column;
         justify-content: space-between;
         padding: 7vh 0;
-        height: 90vh;
     }
     #cupRow img {
         width: 70%;
@@ -336,10 +341,21 @@ main {
 }
 
 
+/* ======================== */
+    /* SHOPS PAGE CSS */
+/* ======================== */
+.ecsp {
+
+    padding-top: 20px;
+}
 
 
 
-/* MEDIA QUERIES */
+
+
+/* ======================== */
+    /* MEDIA QUERIES */
+/* ======================== */
 
 /* Screens Wider than 2000px (4k usually) */
 @media (min-width:2000px) {
